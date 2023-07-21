@@ -1,0 +1,36 @@
+{
+    "id": "CONFIG",
+    "pKey": "gpt3",
+    "promptDesigns": [
+        {
+            "entity": "routines",
+            "template": "You are an expert at brainstorming {category} activities to achieve the objectives, {objectives}. Brainstorm {lineCount} activities and present them as a numbered list, each item not more than {wordCount} words in the -ing tone. \nActivities:",
+            "inputs": {
+                "lineCount": "10",
+                "wordCount": "4"
+            }
+        },
+        {
+            "entity": "habits",
+            "template": "You are an expert at brainstorming habits to achieve the objectives, {objectives}. Brainstorm {lineCount} habits and present them as a numbered list, each item not more than {wordCount} words in the past perfect tense. \nHabits:",
+            "inputs": {
+                "lineCount": "10",
+                "wordCount": "5"
+            }
+        },
+        {
+            "entity": "key-results",
+            "template": "Write {lineCount} measurable, actionable, aspirational key results for my objective, \"{objectiveTitle}\" based on the OKR model. Each of them not longer than {wordCount} words.\nKey results:",
+            "inputs": {
+                "lineCount": "10",
+                "wordCount": "5"
+            }
+        }
+    ],
+    "model": "text-davinci-003",
+    "temperature": 0.7,
+    "max_tokens": 500,
+    "top_p": 1,
+    "frequency_penalty": 0,
+    "presence_penalty": 0,
+}
